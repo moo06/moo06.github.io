@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+@font-face {
+font-family: "vcr";
+src: url("VCR_OSD_MONO_1.001.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: vcr;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.text {
+    position: absolute;
+    top: 180px;
+    left: 200px;
+}
+
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="80s0001-0500.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+    <div class="text">
+    <h1 style="font-size:70px;">BEPIS CHARTS 2001</h1>
+    <p style="font-size:35px;">15 BEPIS CHARTS NO.1'S ...SO FAR</p>
+    <ul>
+        <li>I WANT IT THAT WAS - BACKSTREET BOYS</li>
+        <li>ALLSTAR - SMASH MOUTH</li>
+        <li>CLINT EASTWOOD - GORILLAZ</li>
+        <li>OOPS I DID IT AGAIN - BRITNEY SPEARS</li>
+        <li>MACARENA - LOS DEL RIO</li>
+        <li>ICE ICE BABY - VANILLA ICE</li>
+        <li>AN MORE</li>
+    </ul>
+    <p style="font-size:35px;">COMING SOON</p>
+    </div>
+    <img src="bepis can.png" width="100%">
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
