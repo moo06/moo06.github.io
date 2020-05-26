@@ -11,9 +11,27 @@ body {
 <body>
 <audio id="myAudio" src="NyanCat.mp3" preload="auto" autoplay>
 </audio>
+<a onClick="togglePlay()">Click here to hear moosic.</a>
 <script>
- document.getElementById('myAudio').play();
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+myAudio.play();
+
+function togglePlay() {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
 </script>
+</audio>
 <table width="100%" height="100%">
 <tr>
 <th width="50%"><img src="images/me.gif" height="70%"><th>
