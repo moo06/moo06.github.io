@@ -11,24 +11,11 @@ body {
 <body>
 <audio id="myAudio" src="NyanCat.mp3" preload="auto" autoplay>
 </audio>
-<a onClick="togglePlay()">Click here to hear moosic.</a>
 <script>
 var myAudio = document.getElementById("myAudio");
-var isPlaying = true;
+
 myAudio.play();
 
-function togglePlay() {
-  if (isPlaying) {
-    myAudio.pause()
-  } else {
-    myAudio.play();
-  }
-};
-myAudio.onplaying = function() {
-  isPlaying = true;
-};
-myAudio.onpause = function() {
-  isPlaying = false;
 };
 </script>
 </audio>
