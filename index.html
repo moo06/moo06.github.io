@@ -9,29 +9,25 @@ body {
 </style>
 </head>
 <body>
-    <div class="thumbnail" id="paparazzixxx">
-    <a class="playback" href="#">
-        <img id="play" src="https://sophiebatten.files.wordpress.com/2014/08/001430-3d-transparent-glass-icon-media-a-media22-arrow-forward1.png" />
-    </a>
-<audio id="paparazzi" autoplay loop>
-  <source src="NyanCat.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
+<audio id="myAudio" src="NyanCat.mp3" preload="auto">
 </audio>
-<script type="text/javascript">
-   $(function() {
-     $(".playback").click(function(e) {
-       e.preventDefault();
+<a onClick="togglePlay()">Click here to hear moosic.</a>
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
 
-       // This next line will get the audio element
-       // that is adjacent to the link that was clicked.
-       var song = $(this).next('audio').get(0);
-       if (song.paused)
-         song.play();
-       else
-         song.pause();
-     });
-   });
-</script>
+function togglePlay() {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
 <p>If you are reading this, it is because your browser does not support the audio element.     </p>
 </audio>
 <table width="100%" height="100%">
