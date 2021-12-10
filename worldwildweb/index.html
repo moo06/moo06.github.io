@@ -28,42 +28,7 @@
   <img src="img/worldwildwebcover-min.png" height="500px">
   <div style="display:inline-block; height:500px; vertical-align:top; overflow:visible; padding-left:20px;">
   <h1>Icosahedron's Second album.</h1>
-  <span id="countdown_time"></span>
-
-<script>
-  var
-    diff = 1639112400;
-
-function updateETime() {
-
-  function pad(num) {
-    return num > 9 ? num : '0'+num;
-  };
-
-
-    days = Math.floor( diff / (1000*60*60*24) ),
-    hours = Math.floor( diff / (1000*60*60) ),
-    mins = Math.floor( diff / (1000*60) ),
-    secs = Math.floor( diff / 1000 ),
-
-    dd = days,
-    hh = hours - days * 24,
-    mm = mins - hours * 60,
-    ss = secs - mins * 60;
-
-    document.getElementById("countdown_time")
-        .innerHTML =
-            dd + ' days ' +
-            pad(hh) + ':' + //' hours ' +
-            pad(mm) + ':' + //' minutes ' +
-            pad(ss) ; //+ ' seconds' ;
-    
-    diff -= 1000;
-
-}
-setInterval(updateETime, 1000 );
-
-</script>
+    <h2>lol a few hours pretend the timer works</h2>
   <h2>Featuring the following singles:</h2>
   <p>Really Cool Skeletons</p>
   <audio controls>
