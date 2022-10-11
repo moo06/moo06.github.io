@@ -11,7 +11,6 @@
             }
 
             .fa-brands {
-                padding: 20px;
                 font-size: 30px;
                 width: 50px;
                 text-align: center;
@@ -36,10 +35,45 @@
             section {
                 height: 100%;
                 width: 100%;
-                background-image: url(assets/accordion.png);
+                
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
             }
+            
+            @media screen and (max-width: 768px) {
+                section {
+                    background-image: url(assets/accordionmob.png);
+                }
+                .hyperlink {
+                    display:none;
+                }
+                .fa-brands {
+                    padding: 30px;
+                }
+                .column {
+                    width: 100%;
+                }
+                .header {
+                    padding-left: 0%; 
+                    text-align: center;
+            }
+            
+            @media screen and (min-width: 769px) {
+                section {
+                    background-image: url(assets/accordion.png);
+                }
+                .fa-brands {
+                    padding: 20px;
+                }
+                .column {
+                    width: 50%;
+                }
+                .header {
+                    padding-left: 20%; 
+                }
+            }
+            
             
             .header a:hover{
                 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -47,9 +81,9 @@
             
             .header {
                 width: 100%;
-                padding-left: 20%; 
+                
                 padding-top: 10px;
-                line-height: 3.5vw;
+                line-height: 7vh;
                 position:fixed;
                 background-color:black;
                 z-index: 9999;
@@ -59,7 +93,7 @@
                 text-decoration: none;
                 color: white;
                 mix-blend-mode: difference;
-                padding: 1vw;
+                padding: 2vh;
             }
             
             .footer a:hover{
@@ -70,7 +104,7 @@
                 width: 100%;
                 padding-left: 20%; 
                 padding-top: 10px;
-                line-height: 4vw;
+                line-height: 8vh;
                 background-color:black;
             }
             
@@ -78,18 +112,20 @@
                 text-decoration: none;
                 color: white;
                 mix-blend-mode: difference;
-                padding: 1vw;
+                padding: 2vh;
+                font-size: 1.5vh;
+                vertical-align: 0.6vh;
             }
             
             .logo {
                 font-family: glou;
-                font-size: 3vw;
+                font-size: 6vh;
             }
             
             .hyperlink {
                 
-                font-size: 1.5vw;
-                vertical-align: 0.3vw;
+                font-size: 3vh;
+                vertical-align: 0.6vh;
             }
             
             .segment {
@@ -97,25 +133,25 @@
             }
             
             .segment h1 {
-                font-size: 3vw;
+                font-size: 6vh;
             }
             
             .segment h2 {
-                font-size: 2vw;
+                font-size: 4vh;
             }
             
             .segment p {
-                font-size: 1.5vw;
+                font-size: 3vh;
             }
             
             .segment a {
-                font-size: 1.5vw;
+                font-size: 3vh;
                 color: black;
             }
             
             .column {
                 float: left;
-                width: 50%;
+                
                 padding: 10px;
             }
             
@@ -280,7 +316,7 @@
         </div>
             <div class="footer" id="footer">
                 <a href="#" class="logo">Icosahedron</a>
-                <a class="hyperlink">© Copyright Icosahedron 2022</a>
+                <a>© Copyright Icosahedron 2022</a>
             </div>
     </body>
 </html>
