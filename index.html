@@ -1,0 +1,286 @@
+<html>
+    <head>
+        <title>Icosahedron</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/989938690a.js" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap');
+            @font-face {
+                font-family: glou;
+                src: url(assets/GLECB.TTF);
+            }
+
+            .fa-brands {
+                padding: 20px;
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 0;
+                font-family: 'Inter Tight', sans-serif;
+                color: black;
+            }
+            
+            section {
+                height: 100%;
+                width: 100%;
+                background-image: url(assets/accordion.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .header a:hover{
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+            
+            .header {
+                width: 100%;
+                padding-left: 20%; 
+                padding-top: 10px;
+                line-height: 3.5vw;
+                position:fixed;
+                background-color:black;
+                z-index: 9999;
+            }
+            
+            .header a {
+                text-decoration: none;
+                color: white;
+                mix-blend-mode: difference;
+                padding: 1vw;
+            }
+            
+            .footer a:hover{
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+            
+            .footer {
+                width: 100%;
+                padding-left: 20%; 
+                padding-top: 10px;
+                line-height: 4vw;
+                background-color:black;
+            }
+            
+            .footer a {
+                text-decoration: none;
+                color: white;
+                mix-blend-mode: difference;
+                padding: 1vw;
+            }
+            
+            .logo {
+                font-family: glou;
+                font-size: 3vw;
+            }
+            
+            .hyperlink {
+                
+                font-size: 1.5vw;
+                vertical-align: 0.3vw;
+            }
+            
+            .segment {
+                padding: 1% 20%;
+            }
+            
+            .segment h1 {
+                font-size: 3vw;
+            }
+            
+            .segment h2 {
+                font-size: 2vw;
+            }
+            
+            .segment p {
+                font-size: 1.5vw;
+            }
+            
+            .segment a {
+                font-size: 1.5vw;
+                color: black;
+            }
+            
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #9D9D9D;
+            }
+            
+            .container {
+                position: relative;
+
+            }
+            
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            
+            .text {
+                color: white;
+                font-size: 1.5vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="header" id="header">
+                <a href="#" class="logo">Icosahedron</a>
+                <a href="#bio" class="hyperlink">Bio</a>
+                <a href="#releases" class="hyperlink">Releases</a>
+                <a href="#downloads" class="hyperlink">Downloads</a>
+                <a href="#contact" class="hyperlink">Contact</a>
+            </div>
+        </section>
+        <div class="segment" id="bio">
+            <h1><br>Who is Icosahedron?</h1>
+            <div class="row">
+                <div class="column">
+                    <p>Icosahedron is a cool fella with many friends. Paired with a few key-based instruments,
+                    occasionally stringed instruments, Icosahedron is unstoppable, intangible and inevitable.
+                    Icosahedron's intentions, although unknown, are presumed to make (or ruin) your decades
+                    with brain-desolving music that cannot be defined into words. Each album always has a
+                    unique style to it, whether it's synth-pop, alt-rock, new-wave or any other genre with
+                    hyphens. Icosahedron is often enjoyed with a side of concern and distress.</p>
+                </div>
+                <div class="column">
+                    <img src="assets/flashlight.png" style="max-width:100%;"></img>
+                </div>
+            </div>
+        </div>
+        <div class="segment" id="releases">
+            <h1><br>What music is there?</h1>
+            <p>Funny you should ask, Here is a list of all of my releases:</p>
+            <div class="row">
+                <div class="column">
+                <a href="https://icosahedrontunes.bandcamp.com/album/world-wild-web">
+                <div class="container">
+                    <img src="https://f4.bcbits.com/img/a2757284426_16.jpg" style="max-width:100%;" class="image" class="glowy">
+                    <div class="overlay">
+                        <div class="text">World Wild Web<br>December 10th 2021</div>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="column">
+                <a href="https://www.icosahedron.pizza/liveset/ratrave/">
+                <div class="container">
+                    <img src="https://e.snmc.io/i/600/w/5b80f49b2054317d7035cd6eaceb86dc/8735772/icosahedron-i-played-at-avenue-Cover-Art.jpg" style="max-width:100%;" class="image" class="glowy">
+                    <div class="overlay">
+                        <div class="text">I Played at Avenue<br>January 22nd 2021</div>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                <a href="https://icosahedrontunes.bandcamp.com/album/computer-assisted-disaster">
+                <div class="container">
+                    <img src="https://f4.bcbits.com/img/a0534376695_16.jpg" style="max-width:100%;" class="image" class="glowy">
+                    <div class="overlay">
+                        <div class="text">Computer Assisted Disaster<br>January 2nd 2021</div>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="column">
+                <a href="https://icosahedrontunes.bandcamp.com/album/bee-haven">
+                <div class="container">
+                    <img src="https://f4.bcbits.com/img/a3632964723_16.jpg" style="max-width:100%;" class="image" class="glowy">
+                    <div class="overlay">
+                        <div class="text">Bee Haven<br>July 4th 2020</div>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="segment" id="downloads">
+            <h1><br>Any free MP3s?</h1>
+            <p>Yeah, knock yourself out.</p>
+            <div class="row">
+                <div class="column">
+                	<h2>Tracks from Bee Haven/CAD</h2>
+                    <a href="downloads/bees.mp3">Bees!</a>
+                    <br><a href="downloads/calculator.mp3">Graphical Calculator</a>
+                    <br><a href="downloads/gravedigging.mp3">Gravedigging</a>
+                    <br><a href="downloads/rolling.mp3">Rolling 'round the Town</a>
+                    <br><h2>Tracks from World Wild Web</h2>
+                    <a href="downloads/robotattack.mp3">Robot Attack!</a>
+                    <br><a href="downloads/garfield.mp3">The Orange Thing (We Call Earth)</a>
+                    <br><a href="downloads/phone.mp3">Over the Phone</a>
+                    <br><a href="downloads/idk.mp3">I Don't Know</a>
+                    <br><a href="downloads/roundabout.mp3">Roundabout</a>
+                    <br><a href="downloads/coolskeley.mp3">Really Cool Skeletons</a>
+                </div>
+                <div class="column">
+                    <br><h2>Misc.</h2>
+                    <br><a href="downloads/overthephone2.mp3">Over The Phone Recorded In One Hour</a>
+                    <br><h2>Covers</h2>
+                    <a href="downloads/mrme.mp3">Mr. Me - They Might Be Giants</a>
+                    <br><a href="downloads/mammal.mp3">Mammal - They Might Be Giants</a>
+                    <br><a href="downloads/particle_man.mp3">Particle Man - They Might Be Giants</a>
+                    <br><a href="downloads/statue.mp3">The Statue Got Me High - They Might Be Giants</a>
+                </div>
+        </div>
+        </div>
+        <div class="segment" id="contact">
+            <h1><br>Can I contact you?</h1>
+            <p>Yeah sure. I can usually be contacted through the social media here:
+                    <a href="https://twitter.com/letsmoo06" class="fa-brands fa-twitter"></a>
+                    <a href="https://www.instagram.com/letsmoo06/" class="fa-brands fa-instagram"></a>
+                    <a href="https://discord.gg/2yf325jcsk" class="fa-brands fa-discord"></a>
+            <br>If it's a more professional matter, you can email me at: <a href="mailto:icosahedronmgmt@gmail.com">icosahedronmgmt@gmail.com</a></p>
+        </div>
+            <div class="footer" id="footer">
+                <a href="#" class="logo">Icosahedron</a>
+                <a class="hyperlink">© Copyright Icosahedron 2022</a>
+            </div>
+    </body>
+</html>
